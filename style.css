@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #fff1eb, #acf5d9);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px 0 rgba(89, 208, 154, 0.2);
+}
+
+.topic-text h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 10px;
+}
+
+.form-info{
+    width: 70%;
+    margin:auto;
+}
+
+.input-box {
+    height: 50px; 
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+.input-box input,
+.input-box textarea {
+    height: 100%; 
+    width: 100%; 
+    border: none; 
+    border-radius: 5px; 
+    background: #f0f1f8; 
+    padding: 0 20px;
+}
+
+.input-box textarea {
+    resize: none;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.message-box{
+    min-height: 90px;
+}
+
+.button {
+    display:inline-block;
+}
+
+.button input{
+    color: #fff;
+    font-size: 18px;
+    background: #18765c;;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.2s;
+    margin-top: 50px;
+}
+
+.button input:hover {
+    background: rgba(76, 175, 80, 0.6);
+}
+
+/*Media Query*/
+
+@media (max-width: 800px){
+    .container {
+        height: 100%;
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .form-info{
+        width: 70%;
+        margin-left: 0;
+        
+    }
+    .topic-text{
+        font-size: 16px;
+        font-weight: 600;
+        color: #252525;
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .topic-text h1{
+        font-size: 24px;
+        font-weight: 600;
+        color: #252525;
+        margin-bottom: 10px;
+    }
+}
